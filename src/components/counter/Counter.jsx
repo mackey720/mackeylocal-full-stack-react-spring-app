@@ -45,8 +45,6 @@ class Counter extends Component {
     }
 
     decrement(by) { //update state - counter ++
-        //console.log('increment from parent - ${by}')
-        //this.state.counter++ 
         this.setState( (prevState) => {
             return {counter: prevState.counter - by}
         });
@@ -54,16 +52,6 @@ class Counter extends Component {
 }
 
 class CounterButton extends Component{
-    constructor() {
-        super()
-        // this.state = {
-        //     counter : 0
-        // }
-
-        // this.increment = this.increment.bind(this)
-        // this.decrement = this.decrement.bind(this)
-    }
-
     render() {
         return (
             <div className="counter">
